@@ -84,11 +84,13 @@ GET /                          200 OK
 
 ### run Sinatra on a terminal
 ```
-% ruby WebHookReceiver/server.rb -p 80 -o 0.0.0.0
+% ruby WebHookReceiver/server.rb -p 4567 -o 0.0.0.0
 ```
+(default listening port is 4567, so `-p 4567` is not needed)
 
 ### start forwarding by ngrok
 ```
-% ngrok http 80
+% ngrok http 4567
 ``` 
 
+NOTE: The forwarding URL of ngrok changes per every run.
