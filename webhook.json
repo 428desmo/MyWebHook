@@ -1,0 +1,214 @@
+{
+"action":"created",
+"repository":{
+    "id":574961201,
+    "node_id":"R_kgDOIkU2MQ",
+    "name":"Seventh",
+    "full_name":"TokyoDesmo/Seventh",
+    "private":true,
+    "owner":{
+        "login":"TokyoDesmo",
+        "id":119793509,
+        "node_id":"O_kgDOByPnZQ",
+        "avatar_url":"https://avatars.githubusercontent.com/u/119793509?v=4",
+        "gravatar_id":"",
+        "url":"https://api.github.com/users/TokyoDesmo",
+        "html_url":"https://github.com/TokyoDesmo",
+        "followers_url":"https://api.github.com/users/TokyoDesmo/followers",
+        "following_url":"https://api.github.com/users/TokyoDesmo/following{
+            /other_user
+        }",
+        "gists_url":"https://api.github.com/users/TokyoDesmo/gists{
+            /gist_id
+        }",
+        "starred_url":"https://api.github.com/users/TokyoDesmo/starred{
+            /owner
+        }{
+            /repo
+        }",
+        "subscriptions_url":"https://api.github.com/users/TokyoDesmo/subscriptions",
+        "organizations_url":"https://api.github.com/users/TokyoDesmo/orgs",
+        "repos_url":"https://api.github.com/users/TokyoDesmo/repos",
+        "events_url":"https://api.github.com/users/TokyoDesmo/events{
+            /privacy
+        }",
+        "received_events_url":"https://api.github.com/users/TokyoDesmo/received_events",
+        "type":"Organization",
+        "site_admin":false
+    },
+    "html_url":"https://github.com/TokyoDesmo/Seventh",
+    "description":"seventh",
+    "fork":false,
+    "url":"https://api.github.com/repos/TokyoDesmo/Seventh",
+    "forks_url":"https://api.github.com/repos/TokyoDesmo/Seventh/forks",
+    "keys_url":"https://api.github.com/repos/TokyoDesmo/Seventh/keys{
+        /key_id
+    }",
+    "collaborators_url":"https://api.github.com/repos/TokyoDesmo/Seventh/collaborators{
+        /collaborator
+    }",
+    "teams_url":"https://api.github.com/repos/TokyoDesmo/Seventh/teams",
+    "hooks_url":"https://api.github.com/repos/TokyoDesmo/Seventh/hooks",
+    "issue_events_url":"https://api.github.com/repos/TokyoDesmo/Seventh/issues/events{
+        /number
+    }",
+    "events_url":"https://api.github.com/repos/TokyoDesmo/Seventh/events",
+    "assignees_url":"https://api.github.com/repos/TokyoDesmo/Seventh/assignees{
+        /user
+    }",
+    "branches_url":"https://api.github.com/repos/TokyoDesmo/Seventh/branches{
+        /branch
+    }",
+    "tags_url":"https://api.github.com/repos/TokyoDesmo/Seventh/tags",
+    "blobs_url":"https://api.github.com/repos/TokyoDesmo/Seventh/git/blobs{
+        /sha
+    }",
+    "git_tags_url":"https://api.github.com/repos/TokyoDesmo/Seventh/git/tags{
+    /sha
+    }",
+    "git_refs_url":"https://api.github.com/repos/TokyoDesmo/Seventh/git/refs{
+    /sha
+    }",
+    "trees_url":"https://api.github.com/repos/TokyoDesmo/Seventh/git/trees{
+    /sha
+    }",
+    "statuses_url":"https://api.github.com/repos/TokyoDesmo/Seventh/statuses/{
+    sha
+    }",
+    "languages_url":"https://api.github.com/repos/TokyoDesmo/Seventh/languages",
+    "stargazers_url":"https://api.github.com/repos/TokyoDesmo/Seventh/stargazers",
+    "contributors_url":"https://api.github.com/repos/TokyoDesmo/Seventh/contributors",
+    "subscribers_url":"https://api.github.com/repos/TokyoDesmo/Seventh/subscribers",
+    "subscription_url":"https://api.github.com/repos/TokyoDesmo/Seventh/subscription",
+    "commits_url":"https://api.github.com/repos/TokyoDesmo/Seventh/commits{
+    /sha
+    }",
+    "git_commits_url":"https://api.github.com/repos/TokyoDesmo/Seventh/git/commits{
+    /sha
+    }",
+    "comments_url":"https://api.github.com/repos/TokyoDesmo/Seventh/comments{
+    /number
+    }",
+    "issue_comment_url":"https://api.github.com/repos/TokyoDesmo/Seventh/issues/comments{
+    /number
+    }",
+    "contents_url":"https://api.github.com/repos/TokyoDesmo/Seventh/contents/{
+    +path
+    }",
+    "compare_url":"https://api.github.com/repos/TokyoDesmo/Seventh/compare/{
+    base
+    }...{
+    head
+    }",
+    "merges_url":"https://api.github.com/repos/TokyoDesmo/Seventh/merges",
+    "archive_url":"https://api.github.com/repos/TokyoDesmo/Seventh/{
+    archive_format
+    }{
+    /ref
+    }",
+    "downloads_url":"https://api.github.com/repos/TokyoDesmo/Seventh/downloads",
+    "issues_url":"https://api.github.com/repos/TokyoDesmo/Seventh/issues{
+    /number
+    }",
+    "pulls_url":"https://api.github.com/repos/TokyoDesmo/Seventh/pulls{
+    /number
+    }",
+    "milestones_url":"https://api.github.com/repos/TokyoDesmo/Seventh/milestones{
+    /number
+    }",
+    "notifications_url":"https://api.github.com/repos/TokyoDesmo/Seventh/notifications{
+    ?since,
+    all,
+    participating
+    }",
+    "labels_url":"https://api.github.com/repos/TokyoDesmo/Seventh/labels{
+    /name
+    }",
+    "releases_url":"https://api.github.com/repos/TokyoDesmo/Seventh/releases{
+    /id
+    }",
+    "deployments_url":"https://api.github.com/repos/TokyoDesmo/Seventh/deployments",
+    "created_at":"2022-12-06T13:04:08Z",
+    "updated_at":"2022-12-06T13:04:08Z",
+    "pushed_at":"2022-12-06T13:04:08Z",
+    "git_url":"git://github.com/TokyoDesmo/Seventh.git",
+    "ssh_url":"git@github.com:TokyoDesmo/Seventh.git",
+    "clone_url":"https://github.com/TokyoDesmo/Seventh.git",
+    "svn_url":"https://github.com/TokyoDesmo/Seventh",
+    "homepage":null,
+    "size":0,
+    "stargazers_count":0,
+    "watchers_count":0,
+    "language":null,
+    "has_issues":true,
+    "has_projects":true,
+    "has_downloads":true,
+    "has_wiki":true,
+    "has_pages":false,
+    "has_discussions":false,
+    "forks_count":0,
+    "mirror_url":null,
+    "archived":false,
+    "disabled":false,
+    "open_issues_count":0,
+    "license":null,
+    "allow_forking":false,
+    "is_template":false,
+    "web_commit_signoff_required":false,
+    "topics":[],
+    "visibility":"private",
+    "forks":0,
+    "open_issues":0,
+    "watchers":0,
+    "default_branch":"main"
+},
+"organization":{
+    "login":"TokyoDesmo",
+    "id":119793509,
+    "node_id":"O_kgDOByPnZQ",
+    "url":"https://api.github.com/orgs/TokyoDesmo",
+    "repos_url":"https://api.github.com/orgs/TokyoDesmo/repos",
+    "events_url":"https://api.github.com/orgs/TokyoDesmo/events",
+    "hooks_url":"https://api.github.com/orgs/TokyoDesmo/hooks",
+    "issues_url":"https://api.github.com/orgs/TokyoDesmo/issues",
+    "members_url":"https://api.github.com/orgs/TokyoDesmo/members{
+    /member
+    }",
+    "public_members_url":"https://api.github.com/orgs/TokyoDesmo/public_members{
+    /member
+    }",
+    "avatar_url":"https://avatars.githubusercontent.com/u/119793509?v=4",
+    "description":null
+},
+"sender":{
+"login":"428desmo",
+"id":19422086,
+"node_id":"MDQ6VXNlcjE5NDIyMDg2",
+"avatar_url":"https://avatars.githubusercontent.com/u/19422086?v=4",
+"gravatar_id":"",
+"url":"https://api.github.com/users/428desmo",
+"html_url":"https://github.com/428desmo",
+"followers_url":"https://api.github.com/users/428desmo/followers",
+"following_url":"https://api.github.com/users/428desmo/following{
+/other_user
+}",
+"gists_url":"https://api.github.com/users/428desmo/gists{
+/gist_id
+}",
+"starred_url":"https://api.github.com/users/428desmo/starred{
+/owner
+}{
+/repo
+}",
+"subscriptions_url":"https://api.github.com/users/428desmo/subscriptions",
+"organizations_url":"https://api.github.com/users/428desmo/orgs",
+"repos_url":"https://api.github.com/users/428desmo/repos",
+"events_url":"https://api.github.com/users/428desmo/events{
+/privacy
+}",
+"received_events_url":"https://api.github.com/users/428desmo/received_events",
+"type":"User",
+"site_admin":false
+}
+}
+
