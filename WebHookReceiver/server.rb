@@ -22,15 +22,15 @@ post '/payload', provides: :json do
     token = `cat ~/personal_access_token.txt`.chomp
     json = `cat ~/branch_protection_rules.json`.gsub(/(\r\n?|\n| )/,"")
 
-    protectCmd = <<-EOS
-curl \
--X PUT \
--H \"Accept: application/vnd.github+json\" \
--H \"Authorization: Bearer #{token}\" \
--H \"X-GitHub-Api-Version: 2022-11-28\" \
-#{url} \
--d '#{json}'
-EOS
+    protectCmd = <<~EOS
+      curl -s \
+      -X PUT \
+      -H \"Accept: application/vnd.github+json\" \
+      -H \"Authorization: Bearer #{token}\" \
+      -H \"X-GitHub-Api-Version: 2022-11-28\" \
+      #{url} \
+      -d '#{json}'
+    EOS
 
     puts `#{protectCmd}`
 
@@ -43,15 +43,15 @@ EOS
     issueHash = {"title":"Branch protection alert","body":"#{issueBody}"}
     issueJson = issueHash.to_json
     issueUrl="https://api.github.com/repos/#{full_name}/issues"
-    issueCmd = <<-EOS
-curl \
--X POST \
--H \"Accept: application/vnd.github+json\" \
--H \"Authorization: Bearer #{token}\" \
--H \"X-GitHub-Api-Version: 2022-11-28\" \
-#{issueUrl} \
--d '#{issueJson}'
-EOS
+    issueCmd = <<~EOS
+      curl -s \
+      -X POST \
+      -H \"Accept: application/vnd.github+json\" \
+      -H \"Authorization: Bearer #{token}\" \
+      -H \"X-GitHub-Api-Version: 2022-11-28\" \
+      #{issueUrl} \
+      -d '#{issueJson}'
+    EOS
 
     #puts issueCmd
     

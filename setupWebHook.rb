@@ -14,14 +14,14 @@ webhook_handler_port = 4567
 ngrok_localhost_status_port = 4040
 
 
-curl_output = `curl http://localhost:#{webhook_handler_port}/`
+curl_output = `curl -s http://localhost:#{webhook_handler_port}/`
 if curl_output.nil? || curl_output.empty? then
     puts "start the webhook handler server"
     puts "% ruby WebHookReceiver/server.rb -p 4567 -o 0.0.0.0"
     exit
 end
 
-curl_output = `curl http://localhost:#{ngrok_localhost_status_port}/api/tunnels`
+curl_output = `curl -s http://localhost:#{ngrok_localhost_status_port}/api/tunnels`
 if curl_output.nil? || curl_output.empty? then
     puts "start the ngrok"
     puts "% nohup ngrok http #{webhook_handler_port} &"
@@ -38,19 +38,20 @@ else
     public_url = params.dig("tunnels", 0, "public_url")
 
     if public_url && !public_url.empty? then
-        command = "curl" \
-                " -X POST" \
-                " -H \"Accept: application/vnd.github+json\"" \
-                " -H \"Authorization: Bearer #{token}\""\
-                " -H \"X-GitHub-Api-Version: 2022-11-28\"" \
-                " https://api.github.com/orgs/#{organization}/hooks" \
-                " -d '{\"name\":\"web\"," \
-                        "\"active\":true," \
-                        "\"events\":[\"repository\"]," \
-                        "\"config\":{\"url\":\"#{public_url}/payload\"," \
-                                    "\"content_type\":\"json\"}}'"
+        command = <<~EOS
+            curl -s \
+            -X POST \
+            -H \"Accept: application/vnd.github+json\" \
+            -H \"Authorization: Bearer #{token}\" \
+            -H \"X-GitHub-Api-Version: 2022-11-28\" \
+            https://api.github.com/orgs/#{organization}/hooks \
+            -d '{\"name\":\"web\", \
+                 \"active\":true, \
+                 \"events\":[\"repository\"], \
+                 \"config\":{\"url\":\"#{public_url}/payload\", \
+                             \"content_type\":\"json\"}}'
+        EOS
 
-        puts(command)
         `#{command}`
     end
 end

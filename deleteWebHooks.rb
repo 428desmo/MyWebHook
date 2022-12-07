@@ -10,7 +10,7 @@ require 'json'
 token = `cat ~/personal_access_token.txt`.chomp
 organization = "TokyoDesmo"
 
-listCmd = "curl" \
+listCmd = "curl -s " \
           " -H \"Accept: application/vnd.github+json\"" \
           " -H \"Authorization: Bearer #{token}\""\
           " -H \"X-GitHub-Api-Version: 2022-11-28\"" \
@@ -24,7 +24,7 @@ if json && !json.empty? then
     |key,value|
     url = key.dig("url")
     if url then
-        deleteCmd = "curl" \
+        deleteCmd = "curl -s " \
                     " -X DELETE" \
                     " -H \"Accept: application/vnd.github+json\"" \
                     " -H \"Authorization: Bearer #{token}\""\
